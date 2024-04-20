@@ -1,0 +1,320 @@
+@font-face {
+  font-weight: 900;
+  font-family: "Inter", sans-serif;
+  src: url("assets/fonts/Inter-Black.ttf");
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  src: url("assets/fonts/Inter-SemiBold.ttf");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  src: url("assets/fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Manrope";
+  src: url("assets/fonts/Manrope-Regular.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  background-color: rgba(110, 106, 106, 1);
+  color: rgba(0, 0, 0, 1);
+}
+
+.main {
+  max-width: 90rem;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.main-section,
+.products {
+  padding: 5rem 0.4rem;
+  text-align: center;
+}
+
+.language {
+  padding: 4rem 0.4rem;
+  text-align: center;
+}
+
+.title {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+}
+
+.main-title {
+  font-size: 4.375rem;
+  line-height: 4.375rem;
+}
+
+.language-subtitle,
+.help-subtitle {
+  font-size: 3.75rem;
+  line-height: 3.75rem;
+}
+
+.products-subtitle {
+  font-size: 3.75rem;
+  line-height: 3.75rem;
+  padding-top: 4.375rem;
+}
+
+.text {
+  font-size: 1.125rem;
+  line-height: 1.575rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.main-text {
+  font-family: "Manrope";
+  color: rgba(42, 43, 47, 0.8);
+  padding: 1.5rem 0 2.5rem 0;
+  margin: 0 auto;
+  max-width: 43.75rem;
+}
+
+.language-text {
+  font-family: "Inter", sans-serif;
+  color: rgba(42, 43, 47, 0.9);
+  padding: 1.5rem 0 4.375rem 0;
+  max-width: 43rem;
+  margin: 0 auto;
+}
+
+.products-text {
+  font-family: "Inter", sans-serif;
+  color: rgba(42, 43, 47, 0.8);
+  padding: 2rem 0 4rem 0;
+}
+
+.buttons-block {
+  padding-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.button {
+  color: rgba(255, 255, 255, 1);
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  background-color: rgba(1, 70, 254, 1);
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+}
+
+.button-request {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.01em;
+  width: 22.875rem;
+  padding: 1.25rem 1.5rem;
+}
+
+.language-content {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.content-block {
+  border: 0.125rem solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0rem 0.125rem 0.375rem 0rem rgba(0, 0, 0, 0.08);
+  max-width: 25rem;
+  height: 26.375rem;
+  padding: 1.5rem 1rem 1rem 1rem;
+  border-radius: 2rem;
+}
+
+.content-title {
+  font-family: "Inter", sans-serif;
+  font-size: 2.125rem;
+  font-weight: 900;
+  line-height: 2.125rem;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+
+.content-text {
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.575rem;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 0.75rem 0.5rem 1rem 0.5rem;
+}
+
+.content-image,
+.card-image {
+  max-width: 100%;
+}
+
+.button-card {
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+  letter-spacing: -0.03em;
+  padding: 1rem 2rem;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 71.06rem;
+  padding: 2.625rem;
+  border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 1);
+  border: 0.125rem solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 0.25rem 0.75rem 0 rgba(0, 0, 0, 0.12);
+  z-index: 30;
+  position: relative;
+}
+
+.card-subtitle {
+  font-size: 3.75rem;
+  line-height: 3.75rem;
+  text-align: start;
+}
+
+.card-text {
+  font-family: "Inter", sans-serif;
+  color: rgba(42, 43, 47, 0.9);
+  text-align: start;
+  margin-left: 1.125rem;
+  margin-top: 2rem;
+}
+
+.cards {
+  position: relative;
+  padding-bottom: 8rem;
+}
+
+.help {
+  text-align: center;
+  background-color: rgba(244, 246, 253, 1);
+  padding: 4rem 0.4rem 4.375rem 0.4rem;
+}
+
+.help-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5rem 1rem;
+  justify-content: center;
+  padding: 4.375rem 0;
+  padding: 4.375rem 0;
+  max-width: 62.5rem;
+  margin: 0 auto;
+}
+
+.help-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 18.43rem;
+}
+
+.item-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+  font-size: 2.125rem;
+  line-height: 2.125rem;
+  padding: 0.875rem 0;
+  letter-spacing: -0.03em;
+}
+
+.item-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: rgba(122, 134, 156, 1);
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.575rem;
+  letter-spacing: -0.01em;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.first-hidden {
+  background-color: rgba(254, 253, 253, 1);
+  box-shadow: 0 0.75rem 0.75rem 0 rgba(0, 0, 0, 0.06);
+  z-index: 20;
+  position: absolute;
+  width: 65.125rem;
+  height: 24.125rem;
+  top: 9.375rem;
+  left: 11.875rem;
+  border-radius: 2rem;
+  padding: 2.625rem;
+}
+
+.second-hidden {
+  background-color: rgba(254, 253, 253, 1);
+  box-shadow: 0 0.75rem 0.75rem 0 rgba(0, 0, 0, 0.04);
+  z-index: 10;
+  position: absolute;
+  width: 60.81rem;
+  height: 22.56rem;
+  top: 12.5rem;
+  left: 13.75rem;
+  border-radius: 2rem;
+  padding: 2.625rem;
+}
+
+@media screen and (max-width: 965px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .text-block {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-title {
+    font-size: 3.375rem;
+  }
+  
+  .language-subtitle,
+  .help-subtitle {
+    font-size: 2.75rem;
+  }
+  
+  .products-subtitle {
+    font-size: 2.75rem;
+  }
+}
+
