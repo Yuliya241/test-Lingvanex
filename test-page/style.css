@@ -29,7 +29,6 @@
 }
 
 .body {
-  background-color: rgba(110, 106, 106, 1);
   color: rgba(0, 0, 0, 1);
 }
 
@@ -187,8 +186,8 @@
   background-color: rgba(255, 255, 255, 1);
   border: 0.125rem solid rgba(0, 0, 0, 0.04);
   box-shadow: 0 0.25rem 0.75rem 0 rgba(0, 0, 0, 0.12);
-  z-index: 30;
   position: relative;
+  z-index: 30;
 }
 
 .card-subtitle {
@@ -206,8 +205,7 @@
 }
 
 .cards {
-  position: relative;
-  padding-bottom: 8rem;
+  padding-bottom: 4rem;
 }
 
 .help {
@@ -255,39 +253,31 @@
   letter-spacing: -0.01em;
 }
 
-
 .hidden {
   display: none;
 }
 
-.active {
-  display: block;
+.invisible {
+  border-radius: 0 0 2rem 2rem;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
 }
 
-.first-hidden {
+.invisible-first {
   background-color: rgba(254, 253, 253, 1);
   box-shadow: 0 0.75rem 0.75rem 0 rgba(0, 0, 0, 0.06);
+  max-width: 65.125rem;
+  height: 1.68rem;
   z-index: 20;
-  position: absolute;
-  width: 65.125rem;
-  height: 24.125rem;
-  top: 9.375rem;
-  left: 11.875rem;
-  border-radius: 2rem;
-  padding: 2.625rem;
 }
 
-.second-hidden {
+.invisible-second {
   background-color: rgba(254, 253, 253, 1);
   box-shadow: 0 0.75rem 0.75rem 0 rgba(0, 0, 0, 0.04);
+  max-width: 60.81rem;
+  height: 1.81rem;
   z-index: 10;
-  position: absolute;
-  width: 60.81rem;
-  height: 22.56rem;
-  top: 12.5rem;
-  left: 13.75rem;
-  border-radius: 2rem;
-  padding: 2.625rem;
 }
 
 @media screen and (max-width: 965px) {
