@@ -1,23 +1,31 @@
-const btn = document.querySelectorAll('.button-card');
+const btn = document.querySelectorAll('.cards__button');
 const cards = document.querySelectorAll('.card');
-const arrOfCards = [...cards];
+const arrayOfCards = [...cards];
 const card1 = document.querySelector('.card1');
 const card2 = document.querySelector('.card2');
 const card3 = document.querySelector('.card3');
 
 btn.forEach((button) => button.addEventListener('click', function () {
   if (button.innerHTML === 'For travelers') {
-    arrOfCards.find((card) => card === card1).classList.remove('hidden');
-    arrOfCards.filter((card) => card !== card1).forEach((card) => card.classList.add('hidden'));
+    removeClassHidden(card1);
+    addClassHidden(card1);
   }
 
   if (button.innerHTML === 'For travel organization') {
-    arrOfCards.find((card) => card === card2).classList.remove('hidden');
-    arrOfCards.filter((card) => card !== card2).forEach((card) => card.classList.add('hidden'));
+    removeClassHidden(card2);
+    addClassHidden(card2);
   }
 
   if (button.innerHTML === 'For employees') {
-    arrOfCards.find((card) => card === card3).classList.remove('hidden');
-    arrOfCards.filter((card) => card !== card3).forEach((card) => card.classList.add('hidden'));
+    removeClassHidden(card3);
+    addClassHidden(card3);
   }
 }))
+
+function removeClassHidden(card) {
+  arrayOfCards.find((element) => element === card).classList.remove('hidden');
+}
+
+function addClassHidden(card) {
+  arrayOfCards.filter((element) => element !== card).forEach((elem) => elem.classList.add('hidden'));
+}
